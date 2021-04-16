@@ -5,7 +5,13 @@
 
 
 const runningSum = (numbers) => {
-    
+    let before = 0;
+    let output = []
+    for (let i = 0; i < numbers.length; i++){
+        before += numbers[i]
+        output.push(before)
+    }
+    return output
 }
 
 const nums1 = [1,2,3,4]
